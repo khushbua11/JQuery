@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+		<title>JQuery</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#heading" data-whatever="">Heading</button>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Sub-heading" data-whatever="">Sub-heading</button>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addform" data-whatever="">Add Form</button>
+		<main></main>
+		<div class="modal fade" id="heading" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Add Heading</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form method="post" name="headingForm" class="headingForm">
+							<div class="form-group">
+								<label for="heading-text" class="col-form-label">Heading</label>
+								<input type="text" class="form-control inputhead">
+							</div>
+							<div class="modal-footer">
+								<button type="submit"  class="btn btn-primary submitheading">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="Sub-heading" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Sub-heading</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form name="subheadingForm" method="post" class="subheadingForm">
+							<div class="form-group">
+								<label for="Headings">Choose Heading:</label>
+								<select class="form-control selectheading"></select><br><br>
+								<label for="Subheading-text" class="col-form-label">Sub-heading</label>
+								<input type="text" class="form-control inputsubhead">
+							</div>
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-primary submitsubheading">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="addform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Form</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form name="Form" method="post" class="Form">
+							<div class="form-group">
+								<label for="Headings">Choose Heading:</label>
+								<select class="form-control selectheading1"></select><br>
+								<label for="Headings">Choose Sub-heading:</label>
+								<select class="form-control selectsubheading"></select><br>
+								<label for="Headings">Choose Input-type:</label>
+								<select class="form-control selectinputtype">
+									<option>Select Input-type</option>
+									<option value="button">Button</option>
+									<option value="checkbox">CheckBox</option>
+									<option value="radio">Radio</option>
+									<option value="text">Text</option>
+									<option value="email">Email</option>
+									<option value="number">Number</option>
+									<option value="select">Select</option>
+									<option value="file">File</option>
+									<option value="textarea">Textarea</option>
+								</select><br>
+								<input class="form-control idClass" placeholder="Enter id..."><br>
+								<input class="form-control nameClass" placeholder="Name"><br>
+								<input class="form-control valueClass" placeholder="Value"><br>
+								<input class="form-control labelClass" placeholder="Label"><br>
+								<input class="form-control classClass" placeholder="Class"><br>
+								<input class="form-control placeClass" placeholder="Placeholder"><br>
+								<textarea class="form-control textClass" placeholder="Option"></textarea><br>
+								<input type="checkbox" value="readonly" class="readonly"><label for="readonly"> Read-Only</label>
+								<input type="checkbox" value="required" class="required"><label for="required"> Required</label>
+								<input type="checkbox" value="disable" class="disable"><label for="disable"> Disable</label>
+							</div>
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-primary submitForm">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="jquery.js"></script>	
+	</body>
+</html>
